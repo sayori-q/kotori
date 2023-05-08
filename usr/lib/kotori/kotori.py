@@ -5690,8 +5690,6 @@ if __name__ == "__main__":
                     sel_item = self.selectedItems()[0]
                     itemSelected_event(sel_item)
                     menu = QtWidgets.QMenu()
-                    menu.addAction(_("Select"), select_context_menu)
-                    menu.addSeparator()
                     menu.addAction(_("TV guide"), tvguide_context_menu)
                     menu.addAction(_("Hide TV guide"), tvguide_hide)
                     menu.addAction(_("Favourites"), tvguide_favourites_add)
