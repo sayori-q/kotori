@@ -3823,17 +3823,7 @@ if __name__ == "__main__":
             logger.info(f"Using {mpv_version}")
 
             textbox.setText(
-                format_about_text(
-                    _(
-                        "kotori {}\n\n© 2021, 2022 Astroncia\n© {} yuki-chan-nya\n"
-                        "https://github.com/yuki-chan-nya\n\nIPTV player\n\nIcons by"
-                        " Font Awesome ( https://fontawesome.com/ )\nIcons licensed"
-                        " under the CC BY 4.0 License\n"
-                        "( https://creativecommons.org/licenses/by/4.0/ )"
-                    )
-                    .format(APP_VERSION, COPYRIGHT_YEAR)
-                    .replace("©", "Copyright ©")
-                )
+                "IPTV плеер\n"
             )
 
             if settings["cache_secs"] != 0:
