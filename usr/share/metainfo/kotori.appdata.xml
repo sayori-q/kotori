@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021, 2022 Astroncia <kestraly@gmail.com> -->
+<!-- Copyright 2023 yuki-chan-nya <yukichandev@proton.me> -->
+<component type="desktop">
+  <id>kotori.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>kotori</name>
+  <summary>IPTV player</summary>
+
+  <description>
+    <p>
+      IPTV player with EPG support (Astroncia IPTV fork)
+    </p>
+  </description>
+
+  <launchable type="desktop-id">kotori.desktop</launchable>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gist.githubusercontent.com/yuki-chan-nya/c37f80c2cb00afbdbd98959186e1ab80/raw/d990f212d8e9a5170f800aafdfc82333f9264e31/kotori.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="homepage">https://github.com/yuki-chan-nya/kotori</url>
+  <url type="bugtracker">https://github.com/yuki-chan-nya/kotori/issues</url>
+  <developer_name>yuki-chan-nya</developer_name>
+  <translation type="gettext">kotori</translation>
+</component>

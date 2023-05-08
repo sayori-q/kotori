@@ -1,0 +1,1335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the kotori package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kotori\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-03 09:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: usr/lib/kotori/kotori.py:254 usr/lib/kotori/kotori.py:801
+#: usr/lib/kotori/kotori.py:817
+msgid "kotori error"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:256 usr/lib/kotori/kotori.py:810
+#: usr/lib/kotori/kotori.py:822
+#: usr/lib/kotori/kotori/m3u_editor.py:165
+msgid "Error"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:308
+msgid "IPTV player"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:544
+msgid "Loading TV guide cache..."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:700 usr/lib/kotori/kotori.py:950
+#: usr/lib/kotori/kotori.py:1016 usr/lib/kotori/kotori.py:1017
+#: usr/lib/kotori/kotori.py:1018 usr/lib/kotori/kotori.py:4853
+#: usr/lib/kotori/kotori.py:5018 usr/lib/kotori/kotori/m3u.py:35
+#: usr/lib/kotori/kotori/xspf.py:30
+#: usr/lib/kotori/kotori/xtreamtom3u.py:31
+msgid "All channels"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:804
+msgid "Processing error"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:818
+msgid "Could not connect"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:857 usr/lib/kotori/kotori.py:866
+msgid ""
+"Failed to load playlist - unknown encoding! Please use playlists in UTF-8 "
+"encoding."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:900 usr/lib/kotori/kotori.py:941
+#: usr/lib/kotori/kotori/m3u_editor.py:118
+msgid "Playlist loading error!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1018 usr/lib/kotori/kotori.py:5019
+#: usr/lib/kotori/kotori.py:5706
+msgid "Favourites"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1100 usr/lib/kotori/kotori.py:1637
+#: usr/lib/kotori/kotori.py:7139 usr/lib/kotori/kotori.py:8195
+msgid "Settings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1105
+#: usr/lib/kotori/kotori/menubar.py:362
+msgid "Shortcuts"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1121
+msgid "Description"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1121
+msgid "Shortcut"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1138 usr/lib/kotori/kotori.py:3717
+#: usr/lib/kotori/kotori.py:5664
+msgid "Are you sure?"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1165 usr/lib/kotori/kotori.py:3603
+msgid "Double click to change"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1178
+msgid "Reset to defaults"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1186
+msgid "Modify shortcut"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1201
+msgid ""
+"Press the key combination\n"
+"you want to assign"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1253
+msgid "Shortcut already used"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1258
+msgid "Cancel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1260
+msgid "OK"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1283
+#: usr/lib/kotori/kotori/menubar.py:371
+msgid "&About kotori"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1288 usr/lib/kotori/kotori.py:3534
+msgid "License"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1293 usr/lib/kotori/kotori.py:2888
+#: usr/lib/kotori/kotori.py:7155
+msgid ""
+"Channel\n"
+"sort"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1298 usr/lib/kotori/kotori.py:5711
+msgid "Video settings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1303 usr/lib/kotori/kotori.py:5710
+msgid "Open in external player"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1308 usr/lib/kotori/kotori.py:1416
+#: usr/lib/kotori/kotori.py:5704 usr/lib/kotori/kotori.py:5980
+#: usr/lib/kotori/kotori.py:6058 usr/lib/kotori/kotori.py:7151
+#: usr/lib/kotori/kotori.py:8198
+#: usr/lib/kotori/kotori/menubar.py:348
+msgid "TV guide"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1312 usr/lib/kotori/kotori.py:6207
+msgid "No TV guide for channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1342 usr/lib/kotori/kotori.py:1973
+#: usr/lib/kotori/kotori.py:5397 usr/lib/kotori/kotori.py:6069
+msgid "Search channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1344 usr/lib/kotori/kotori.py:1564
+#: usr/lib/kotori/kotori.py:1566 usr/lib/kotori/kotori.py:1975
+#: usr/lib/kotori/kotori.py:6071
+msgid "Search"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1355
+msgid "Show only channels in playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1396 usr/lib/kotori/kotori.py:7109
+msgid "Recording scheduler"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1401 usr/lib/kotori/kotori.py:6836
+#: usr/lib/kotori/kotori.py:7131 usr/lib/kotori/kotori.py:8197
+msgid "Archive"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1406 usr/lib/kotori/kotori.py:1411
+#: usr/lib/kotori/kotori.py:7145
+msgid "Playlists"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1441
+msgid "Name should not be empty!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1449
+msgid "URL not specified!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1456 usr/lib/kotori/kotori.py:2154
+#: usr/lib/kotori/kotori/m3u_editor.py:93
+msgid "Select m3u playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1463 usr/lib/kotori/kotori.py:2161
+msgid "Select EPG file"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1468
+msgid "Name"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1469 usr/lib/kotori/kotori.py:2883
+msgid "M3U / XSPF playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1470 usr/lib/kotori/kotori.py:2885
+msgid ""
+"TV guide\n"
+"address"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1473 usr/lib/kotori/kotori.py:1475
+#: usr/lib/kotori/kotori.py:2914 usr/lib/kotori/kotori.py:2917
+msgid "Path to file or URL"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1486 usr/lib/kotori/kotori.py:2118
+#: usr/lib/kotori/kotori.py:3405 usr/lib/kotori/kotori.py:3422
+msgid "Save"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1494
+msgid "TV guide offset"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1496
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:1561 usr/lib/kotori/kotori.py:2236
+#: usr/lib/kotori/kotori.py:2254 usr/lib/kotori/kotori.py:2638
+#: usr/lib/kotori/kotori.py:5573 usr/lib/kotori/kotori.py:5576
+#: usr/lib/kotori/kotori.py:5591
+msgid "Default"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1610
+msgid "Open"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1631 usr/lib/kotori/kotori.py:5702
+msgid "Select"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1633 usr/lib/kotori/kotori.py:1953
+msgid "Add"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1634
+msgid "Edit"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1635
+msgid "Delete"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1636
+msgid "Favourites+"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1739
+msgid "Channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1740 usr/lib/kotori/kotori.py:1990
+msgid "Start record time"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1741 usr/lib/kotori/kotori.py:1991
+msgid "End record time"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1830 usr/lib/kotori/kotori.py:8194
+msgid "Scheduler"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1867
+msgid "No planned recordings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1874 usr/lib/kotori/kotori.py:7555
+msgid "Waiting for record"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1915
+msgid "Recording"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1916
+msgid "Status"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1943
+msgid "Planned recordings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1944
+msgid "Active recordings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1949
+msgid "Choose channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:1955
+msgid "Remove"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2006
+msgid ""
+"Post-recording\n"
+"action"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2008
+msgid "Nothing to do"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2009
+msgid "Press Stop"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2063
+msgid "Recording of two channels simultaneously is not available!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2114 usr/lib/kotori/kotori.py:2959
+#: usr/lib/kotori/kotori.py:3500 usr/lib/kotori/kotori.py:3548
+msgid "Close"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2123
+msgid ""
+"Do not forget\n"
+"to set custom sort order in settings!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2169
+msgid "Select folder for recordings and screenshots"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2184 usr/lib/kotori/kotori.py:2886
+msgid "Deinterlace"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2185 usr/lib/kotori/kotori.py:3031
+msgid "User agent"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2186
+msgid "Group"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2188
+msgid "Hide"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2207
+msgid "Contrast"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2208
+msgid "Brightness"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2209
+msgid "Hue"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2210
+msgid "Saturation"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2211 usr/lib/kotori/kotori.py:2342
+msgid "Gamma"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2212 usr/lib/kotori/kotori.py:3171
+msgid "Aspect ratio"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2213 usr/lib/kotori/kotori.py:3172
+msgid "Scale / Zoom"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2214 usr/lib/kotori/kotori.py:3173
+msgid "Pan and scan"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2215
+msgid "EPG name"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2285 usr/lib/kotori/kotori.py:3032
+msgid "HTTP Referer:"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2293 usr/lib/kotori/kotori.py:2294
+#: usr/lib/kotori/kotori.py:2311 usr/lib/kotori/kotori.py:2315
+#: usr/lib/kotori/kotori.py:6581 usr/lib/kotori/kotori.py:6587
+#: usr/lib/kotori/kotori.py:6601 usr/lib/kotori/kotori.py:6605
+msgid "Average Bitrate"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2311 usr/lib/kotori/kotori.py:2315
+#: usr/lib/kotori/kotori.py:2329 usr/lib/kotori/kotori.py:2334
+#: usr/lib/kotori/kotori.py:2356 usr/lib/kotori/kotori.py:2371
+#: usr/lib/kotori/kotori.py:2377 usr/lib/kotori/kotori.py:2389
+#: usr/lib/kotori/kotori.py:2424 usr/lib/kotori/kotori.py:2428
+#: usr/lib/kotori/kotori.py:6582 usr/lib/kotori/kotori.py:6588
+#: usr/lib/kotori/kotori.py:6617 usr/lib/kotori/kotori.py:6619
+#: usr/lib/kotori/kotori.py:6631 usr/lib/kotori/kotori.py:6637
+msgid "General"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2312 usr/lib/kotori/kotori.py:2316
+#: usr/lib/kotori/kotori.py:7613
+msgid "kbps"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2330
+msgid "Dimensions"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2334
+msgid "Aspect"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2338 usr/lib/kotori/kotori.py:2342
+#: usr/lib/kotori/kotori.py:2346 usr/lib/kotori/kotori.py:2425
+#: usr/lib/kotori/kotori.py:6618 usr/lib/kotori/kotori.py:6634
+msgid "Color"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2339
+msgid "Pixel Format"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2347
+msgid "Bits Per Pixel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2356 usr/lib/kotori/kotori.py:2389
+msgid "Codec"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2367
+msgid "surround sound"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2368 usr/lib/kotori/kotori.py:2379
+#: usr/lib/kotori/kotori.py:2429 usr/lib/kotori/kotori.py:6620
+#: usr/lib/kotori/kotori.py:6640
+msgid "Layout"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2368
+msgid "Channels"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2371
+msgid "Sample Rate"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2377
+msgid "Format"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2380
+msgid "Channel Count"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2584 usr/lib/kotori/kotori.py:5768
+#: usr/lib/kotori/kotori.py:7647
+msgid "Loading..."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2661 usr/lib/kotori/kotori.py:2938
+msgid "Save settings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2884
+msgid ""
+"Update playlist\n"
+"at launch"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2887
+msgid ""
+"Hardware\n"
+"acceleration"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2889
+msgid "Cache"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2890
+msgid "UDP proxy"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2892
+msgid ""
+"Folder for recordings\n"
+"and screenshots"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2934
+#, python-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:2936
+msgid "Or select provider"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2941
+msgid "Reset channel settings and sorting"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2943
+msgid "Clear logo cache"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2946
+msgid "as in playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2947
+msgid "alphabetical order"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2948
+msgid "reverse alphabetical order"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2949
+msgid "custom"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:2974 usr/lib/kotori/kotori.py:2982
+msgid "Update"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3001
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:3004
+msgid "Load EPG for"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3040
+msgid "mpv options"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3041
+msgid "list"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3050
+msgid ""
+"Do not update\n"
+"EPG at boot"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3055
+msgid ""
+"Open previous channel\n"
+"at startup"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3057
+msgid "Hide mpv panel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3059
+msgid "Hide EPG percentage"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3062
+msgid "Hide EPG from playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3065
+msgid "Hide bitrate / video info"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3068
+msgid "Enable styles redefinition"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3070
+msgid "Volume change step"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3096
+msgid "Floating panels opacity"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3105
+msgid ""
+"Floating panel\n"
+"position"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3108
+msgid "Right"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3109
+msgid "Left"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3113
+msgid ""
+"Switch channels with\n"
+"the mouse wheel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3116
+msgid ""
+"Automatic\n"
+"reconnection"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3119
+msgid ""
+"by default:\n"
+"change volume"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3129 usr/lib/kotori/kotori.py:3132
+msgid "WARNING: experimental function, working with problems"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3137
+msgid ""
+"Show playlist\n"
+"on mouse move"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3142
+msgid ""
+"Show controls\n"
+"on mouse move"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3147
+msgid "Channel logos"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3149
+msgid "Prefer M3U"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3150
+msgid "Prefer EPG"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3151
+msgid "Do not load from EPG"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3152
+msgid "Do not load any logos"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3155
+msgid "Do not cache EPG"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3160
+msgid ""
+"Do not create screenshots\n"
+"and recordings subfolders"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3166
+msgid "Hide the current television program"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3193
+msgid "Enable catchup"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3209
+msgid "Main"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3210 usr/lib/kotori/kotori.py:6624
+msgid "Video"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3211
+msgid "Network"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3212
+msgid "GUI"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3213
+msgid "Actions"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3214
+msgid "Catchup"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3215
+msgid "EPG"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3216
+msgid "Other"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3217
+msgid "Debug"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3413 usr/lib/kotori/kotori.py:3430
+msgid "Username"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3415 usr/lib/kotori/kotori.py:3432
+msgid "Password"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3417 usr/lib/kotori/kotori.py:3434
+msgid "URL"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3544
+msgid "About Qt"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3831
+msgid ""
+"kotori {}\n"
+"\n"
+"© 2021, 2022 Astroncia\n"
+"© {} yuki-chan-nya\n"
+"https://github.com/yuki-chan-nya\n"
+"\n"
+"IPTV player\n"
+"\n"
+"Icons by Font Awesome ( https://fontawesome.com/ )\n"
+"Icons licensed under the CC BY 4.0 License\n"
+"( https://creativecommons.org/licenses/by/4.0/ )"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3936 usr/lib/kotori/kotori.py:7083
+msgid "Pause"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:3943
+msgid "Play"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4205 usr/lib/kotori/kotori.py:4536
+#: usr/lib/kotori/kotori.py:6192 usr/lib/kotori/kotori.py:6515
+#: usr/lib/kotori/kotori.py:6650
+msgid "No channel selected"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4236
+msgid "Processing record..."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4459 usr/lib/kotori/kotori.py:5354
+#: usr/lib/kotori/kotori.py:5691 usr/lib/kotori/kotori.py:5805
+#: usr/lib/kotori/kotori.py:5834
+msgid "Nothing found"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4668 usr/lib/kotori/kotori.py:4752
+#: usr/lib/kotori/kotori.py:7113 usr/lib/kotori/kotori.py:7985
+msgid "Volume"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4679
+msgid "To exit fullscreen mode press"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4778 usr/lib/kotori/kotori.py:4786
+msgid "Volume off"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:4893
+msgid "of"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5408
+msgid "Search movie"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5419
+msgid "Search series"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5600
+msgid "Delete from favourites"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5705
+msgid "Hide TV guide"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5708
+msgid "Favourites+ (separate playlist)"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5838 usr/lib/kotori/kotori.py:5861
+msgid "Back"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5896
+msgid "TV channels"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5896
+msgid "Movies"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:5896
+msgid "Series"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6083
+msgid "Page"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6171
+msgid "Doing screenshot..."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6185
+msgid "Screenshot saved!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6188
+msgid "Screenshot saving error!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6306 usr/lib/kotori/kotori.py:6311
+msgid "channels"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6332
+msgid "Preparing record"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6373
+msgid "No channel selected for record"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6465
+msgid "Custom MPV options invalid, ignoring them"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6486
+msgid "Using Qt {} ({})"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6494
+msgid "Using libmpv {}"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6637
+msgid "Audio"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6653 usr/lib/kotori/kotori.py:8189
+#: usr/lib/kotori/kotori/menubar.py:342
+msgid "Stream Information"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6710
+msgid "Playing error"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:6857
+msgid "Using mode"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7087
+msgid "Stop"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7093
+msgid "Fullscreen"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7099
+msgid "Open recordings folder"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7103 usr/lib/kotori/kotori.py:8173
+msgid "Record"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7125 usr/lib/kotori/kotori.py:8174
+msgid "Screenshot"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7159
+msgid "Previous channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7163
+msgid "Next channel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7167
+#: usr/lib/kotori/kotori/m3u_editor.py:378
+msgid "m3u Editor"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7171
+msgid "Help"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7190
+msgid "Writing EPG cache"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7474 usr/lib/kotori/kotori/epg.py:167
+msgid "Updating TV guide..."
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7483 usr/lib/kotori/kotori.py:7678
+msgid "TV guide update error!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7612
+msgid "bps"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7614
+msgid "Mbps"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7615
+msgid "Gbps"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7616
+msgid "Tbps"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7665
+msgid "TV guide update done!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:7676
+msgid "EPG is outdated!"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8155
+#: usr/lib/kotori/kotori/menubar.py:212
+#, python-format
+msgid "-%d second"
+msgid_plural "-%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:8156
+#: usr/lib/kotori/kotori/menubar.py:213
+#, python-format
+msgid "+%d second"
+msgid_plural "+%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:8157 usr/lib/kotori/kotori.py:8159
+#: usr/lib/kotori/kotori/menubar.py:214
+#: usr/lib/kotori/kotori/menubar.py:216
+#, python-format
+msgid "-%d minute"
+msgid_plural "-%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:8158 usr/lib/kotori/kotori.py:8160
+#: usr/lib/kotori/kotori/menubar.py:215
+#: usr/lib/kotori/kotori/menubar.py:217
+#, python-format
+msgid "+%d minute"
+msgid_plural "+%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: usr/lib/kotori/kotori.py:8169 usr/lib/kotori/kotori.py:8186
+#: usr/lib/kotori/kotori/menubar.py:299
+msgid "V&olume -"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8170 usr/lib/kotori/kotori.py:8187
+#: usr/lib/kotori/kotori/menubar.py:303
+msgid "Vo&lume +"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8171
+#: usr/lib/kotori/kotori/menubar.py:230
+msgid "&Normal speed"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8172 usr/lib/kotori/kotori.py:8177
+msgid "Quit the program"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8175
+msgid "Exit fullscreen"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8176
+#: usr/lib/kotori/kotori/menubar.py:352
+msgid "&Update TV guide"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8178
+#: usr/lib/kotori/kotori/menubar.py:325
+msgid "Show/hide playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8179
+#: usr/lib/kotori/kotori/menubar.py:331
+msgid "Show/hide controls panel"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8180
+#: usr/lib/kotori/kotori/menubar.py:258
+msgid "&Video settings"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8181 usr/lib/kotori/kotori.py:8182
+#: usr/lib/kotori/kotori/menubar.py:250
+msgid "&Fullscreen"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8183
+#: usr/lib/kotori/kotori/menubar.py:295
+msgid "&Mute audio"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8184
+#: usr/lib/kotori/kotori/menubar.py:194
+msgid "&Play / Pause"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8185
+#: usr/lib/kotori/kotori/menubar.py:198
+msgid "&Stop"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8188
+#: usr/lib/kotori/kotori/menubar.py:245
+msgid "&Next"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8190
+#: usr/lib/kotori/kotori/menubar.py:241
+msgid "&Previous"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8191
+#: usr/lib/kotori/kotori/menubar.py:184
+msgid "&m3u Editor"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8192
+#: usr/lib/kotori/kotori/menubar.py:176
+msgid "&Playlists"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8193
+#: usr/lib/kotori/kotori/menubar.py:180
+msgid "&Update current playlist"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8196
+#: usr/lib/kotori/kotori/menubar.py:358
+msgid "&Channel sort"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8199
+#: usr/lib/kotori/kotori/menubar.py:254
+msgid "&Compact mode"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8200
+msgid "TV guide for all channels"
+msgstr ""
+
+#: usr/lib/kotori/kotori.py:8201
+#: usr/lib/kotori/kotori/menubar.py:335
+msgid "Window always on top"
+msgstr ""
+
+#: usr/lib/kotori/kotori/epg.py:92
+msgid "Updating TV guide... (loading {}/{})"
+msgstr ""
+
+#: usr/lib/kotori/kotori/epg.py:98
+#: usr/lib/kotori/kotori/epg_xmltv.py:83
+msgid "Updating TV guide... (parsing {}/{})"
+msgstr ""
+
+#: usr/lib/kotori/kotori/epg_xmltv.py:73
+msgid "Updating TV guide... (unpacking {}/{})"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:113
+msgid "loaded"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:155
+msgid "Save File"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:155
+msgid "Playlists (*.m3u)"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:163
+msgid "Playlist successfully saved!"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:172
+msgid "Load M3U"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:176
+msgid "Save as"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:181
+msgid "File"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:270
+msgid "find"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:275
+msgid "replace with"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:280
+msgid "replace all"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:288
+msgid "delete row"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:296
+msgid "add row"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:320
+msgid "filter group (press Enter)"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:324
+msgid ""
+"insert search term and press enter\n"
+" use Selector → to choose column to search"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:388
+#: usr/lib/kotori/kotori/m3u_editor.py:414
+msgid "Ready"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:394
+msgid "Save Confirmation"
+msgstr ""
+
+#: usr/lib/kotori/kotori/m3u_editor.py:396
+msgid "The document was changed.<br>Do you want to save the changes?"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:102
+msgid "Error applying filters"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:188
+msgid "&Exit"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:262
+msgid "&Screenshot"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:267
+msgid "&Postprocessing"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:270
+msgid "&Deblock"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:273
+msgid "De&ring"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:277
+msgid "Debanding (&gradfun)"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:281
+msgid "Add n&oise"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:284
+msgid "Add &black borders"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:287
+msgid "Soft&ware scaling"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:290
+msgid "&Autodetect phase"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:309
+msgid "&Extrastereo"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:312
+msgid "&Karaoke"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:316
+msgid "&Headphone optimization"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:320
+msgid "Volume &normalization"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:365
+msgid "&Settings"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:375
+#: usr/lib/kotori/kotori/menubar.py:377
+#: usr/lib/kotori/kotori/menubar.py:379
+#: usr/lib/kotori/kotori/menubar.py:523
+msgid "empty"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:419
+msgid "&File"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:430
+msgid "&Play"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:438
+msgid "Speed"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:448
+msgid "&Video"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:449
+#: usr/lib/kotori/kotori/menubar.py:469
+#: usr/lib/kotori/kotori/menubar.py:484
+msgid "&Track"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:454
+#: usr/lib/kotori/kotori/menubar.py:471
+msgid "F&ilters"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:468
+msgid "&Audio"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:483
+msgid "&Subtitles"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:489
+msgid "Vie&w"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:498
+msgid "&Options"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:506
+msgid "&Help"
+msgstr ""
+
+#: usr/lib/kotori/kotori/menubar.py:588
+msgid "None"
+msgstr ""
+
+#: usr/lib/kotori/kotori/record.py:77
+#: usr/lib/kotori/kotori/record.py:117
+#: usr/lib/kotori/kotori/record.py:125
+msgid "ffmpeg crashed!"
+msgstr ""
+
+#: usr/lib/kotori/kotori/record.py:78
+#: usr/lib/kotori/kotori/record.py:118
+msgid "exit code:"
+msgstr ""
