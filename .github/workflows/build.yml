@@ -1,0 +1,38 @@
+name: Build
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+
+    steps:
+
+      # Check-out repository
+      - uses: actions/checkout@v3
+
+      # Setup Python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          architecture: 'x86'
+          cache: 'pip'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install requests chardet setproctitle PyQt6 Pillow unidecode
+
+      # Build python script into a stand-alone exe
+      - uses: Nuitka/Nuitka-Action@main
+        with:
+          nuitka-version: main
+          script-name: usr/lib/kotori/kotori.py
+          onefile: true
+          enable-plugins: pyqt6
+
+      # Uploads artifact
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: exe
+          path: build/kotori.exe

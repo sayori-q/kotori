@@ -41,7 +41,7 @@ import textwrap
 import hashlib
 import threading
 import traceback
-from multiprocessing import Manager, active_children, get_context
+from multiprocessing import Manager, active_children, get_context, freeze_support
 from functools import partial
 import chardet
 import requests
@@ -91,6 +91,8 @@ from kotori.keybinds import main_keybinds_internal, main_keybinds_default
 from kotori.crossplatform import LOCAL_DIR, SAVE_FOLDER_DEFAULT
 from kotori.series import parse_series
 from thirdparty.xtream import XTream, Serie
+
+freeze_support()
 
 parser = argparse.ArgumentParser(prog="kotori", description="kotori")
 parser.add_argument("--version", action="store_true", help="Show version")
