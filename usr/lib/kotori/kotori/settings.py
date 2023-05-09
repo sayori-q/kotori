@@ -24,6 +24,7 @@
 import os
 import json
 from pathlib import Path
+from kotori.crossplatform import LOCAL_DIR
 
 
 def parse_settings():
@@ -32,7 +33,7 @@ def parse_settings():
         "epg": "",
         "deinterlace": False,
         "udp_proxy": "",
-        "save_folder": str(Path(os.environ["HOME"], ".config", "kotori", "saves")),
+        "save_folder": str(Path(LOCAL_DIR, "saves")),
         "nocache": True,
         "epgoffset": 0,
         "hwaccel": False,
@@ -70,11 +71,9 @@ def parse_settings():
     settings = settings_default
     settings_loaded = False
 
-    local_dir = str(Path(os.environ["HOME"], ".config", "kotori"))
-
-    if os.path.isfile(str(Path(local_dir, "settings.json"))):
+    if os.path.isfile(str(Path(LOCAL_DIR, "settings.json"))):
         settings_file = open(
-            str(Path(local_dir, "settings.json")), "r", encoding="utf8"
+            str(Path(LOCAL_DIR, "settings.json")), "r", encoding="utf8"
         )
         settings = json.loads(settings_file.read())
         settings_file.close()

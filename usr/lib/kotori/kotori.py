@@ -88,6 +88,7 @@ from kotori.qt6compat import _exec
 from kotori.m3u_editor import M3UEditor
 from kotori.options import read_option, write_option
 from kotori.keybinds import main_keybinds_internal, main_keybinds_default
+from kotori.crossplatform import LOCAL_DIR, SAVE_FOLDER_DEFAULT
 from kotori.series import parse_series
 from thirdparty.xtream import XTream, Serie
 
@@ -242,14 +243,13 @@ if args1.version:
     print(f"{MAIN_WINDOW_TITLE} {APP_VERSION}")
     sys.exit(0)
 
-if not os.path.isdir(str(Path(os.environ["HOME"], ".config"))):
-    os.mkdir(str(Path(os.environ["HOME"], ".config")))
+if platform.system() != "Windows":
+    if not os.path.isdir(str(Path(os.environ["HOME"], ".config"))):
+        os.mkdir(str(Path(os.environ["HOME"], ".config")))
 
-if not os.path.isdir(str(Path(os.environ["HOME"], ".cache"))):
-    os.mkdir(str(Path(os.environ["HOME"], ".cache")))
+    if not os.path.isdir(str(Path(os.environ["HOME"], ".cache"))):
+        os.mkdir(str(Path(os.environ["HOME"], ".cache")))
 
-LOCAL_DIR = str(Path(os.environ["HOME"], ".config", "kotori"))
-SAVE_FOLDER_DEFAULT = str(Path(os.environ["HOME"], ".config", "kotori", "saves"))
 if not os.path.isdir(LOCAL_DIR):
     os.mkdir(LOCAL_DIR)
 if not os.path.isdir(SAVE_FOLDER_DEFAULT):
@@ -354,6 +354,7 @@ if __name__ == "__main__":
 
         m3u = ""
 
+        os.environ["PATH"] = os.path.dirname(__file__) + os.pathsep + os.environ["PATH"]
         from thirdparty import mpv
 
         if not os.path.isdir(LOCAL_DIR):
@@ -1495,12 +1496,6 @@ if __name__ == "__main__":
             (gettext.ngettext("%d hour", "%d hours", 0) % 0).replace("0 ", "")
         )
 
-        def lo_xtream_select_1():
-            xtream_select_1()
-
-        xtream_btn_1 = QtWidgets.QPushButton("XTream")
-        xtream_btn_1.clicked.connect(lo_xtream_select_1)
-
         playlists_win_edit_widget = QtWidgets.QWidget()
         playlists_win_edit_layout = QtWidgets.QGridLayout()
         playlists_win_edit_layout.setAlignment(
@@ -1511,14 +1506,13 @@ if __name__ == "__main__":
         playlists_win_edit_layout.addWidget(m3u_label_1, 1, 0)
         playlists_win_edit_layout.addWidget(m3u_edit_1, 1, 1)
         playlists_win_edit_layout.addWidget(m3u_file_1, 1, 2)
-        playlists_win_edit_layout.addWidget(xtream_btn_1, 2, 0)
-        playlists_win_edit_layout.addWidget(epg_label_1, 3, 0)
-        playlists_win_edit_layout.addWidget(epg_edit_1, 3, 1)
-        playlists_win_edit_layout.addWidget(epg_file_1, 3, 2)
-        playlists_win_edit_layout.addWidget(offset_label_1, 4, 0)
-        playlists_win_edit_layout.addWidget(soffset_1, 4, 1)
-        playlists_win_edit_layout.addWidget(offset_label_hours, 4, 2)
-        playlists_win_edit_layout.addWidget(save_btn_1, 5, 1)
+        playlists_win_edit_layout.addWidget(epg_label_1, 2, 0)
+        playlists_win_edit_layout.addWidget(epg_edit_1, 2, 1)
+        playlists_win_edit_layout.addWidget(epg_file_1, 2, 2)
+        playlists_win_edit_layout.addWidget(offset_label_1, 3, 0)
+        playlists_win_edit_layout.addWidget(soffset_1, 3, 1)
+        playlists_win_edit_layout.addWidget(offset_label_hours, 3, 2)
+        playlists_win_edit_layout.addWidget(save_btn_1, 4, 1)
         playlists_win_edit_widget.setLayout(playlists_win_edit_layout)
         playlists_win_edit.setCentralWidget(playlists_win_edit_widget)
 
@@ -3822,9 +3816,7 @@ if __name__ == "__main__":
 
             logger.info(f"Using {mpv_version}")
 
-            textbox.setText(
-                "IPTV плеер\n"
-            )
+            textbox.setText(format_about_text("IPTV плеер"))
 
             if settings["cache_secs"] != 0:
                 try:

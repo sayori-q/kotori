@@ -22,24 +22,11 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import os
+import platform
 from pathlib import Path
-from kotori.crossplatform import LOCAL_DIR
 
-
-def firstrun():
-    if not os.path.isfile(Path(LOCAL_DIR, "playlists.json")):
-        with open(
-            Path(LOCAL_DIR, "playlists.json"), "w", encoding="utf8"
-        ) as playlists_file:
-            playlists_file.write(
-                '{"SkyNet": {"m3u": "https://xspf.skynet.ru/",'
-                ' "epg": "https://sayori-q.github.io/epg/epg.xml.gz'
-                '", "epgoffset": 0.0}}'
-            )
-        with open(
-            Path(LOCAL_DIR, "settings.json"), "w", encoding="utf8"
-        ) as settings_file:
-            settings_file.write(
-                '{"m3u": "https://xspf.skynet.ru/", '
-                '"epg": "https://sayori-q.github.io/epg/epg.xml.gz"}'
-            )
+if platform.system() != "Windows":
+    LOCAL_DIR = str(Path(os.environ["HOME"], ".config", "kotori"))
+else:
+    LOCAL_DIR = str(Path(os.getenv("LOCALAPPDATA"), "Kotori"))
+SAVE_FOLDER_DEFAULT = str(Path(LOCAL_DIR, "saves"))

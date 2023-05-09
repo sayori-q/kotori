@@ -28,11 +28,10 @@ import base64
 import hashlib
 from pathlib import Path
 from PIL import Image
+from kotori.crossplatform import LOCAL_DIR
 
 
 def fetch_remote_channel_icon(chan_name, logo_url, req_data_ua, req_data_ref):
-    LOCAL_DIR = str(Path(os.environ["HOME"], ".config", "kotori"))
-
     icon_ret = None
     if not logo_url:
         return None
