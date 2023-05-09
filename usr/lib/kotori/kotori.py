@@ -7017,7 +7017,7 @@ if __name__ == "__main__":
             mpris_loop = GLib.MainLoop()
             mpris_thread = threading.Thread(target=mpris_loop_start)
             mpris_thread.start()
-        except Exception as mpris_e:
+        except Exception:
             pass
 
         def update_scheduler_programme():
