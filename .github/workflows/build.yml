@@ -23,7 +23,7 @@ jobs:
           pip install requests chardet setproctitle PyQt6 Pillow unidecode
 
       # Build python script into a stand-alone exe
-      - uses: Nuitka/Nuitka-Action@main
+      - uses: Nuitka/Nuitka-Action@bd0d35b86265e6038bc11bdfc851b3fd114e8433
         with:
           nuitka-version: main
           script-name: usr/lib/kotori/kotori.py
