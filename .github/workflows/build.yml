@@ -31,7 +31,7 @@ jobs:
           enable-plugins: pyqt6
           disable-console: true
           windows-icon-from-ico: kotori.ico
-          include-data-dir: ffmpeg.exe=ffmpeg.exe,mpv-2.dll=mpv-2.dll
+          include-data-dir: bin/ffmpeg.exe=ffmpeg.exe,bin/mpv-2.dll=mpv-2.dll
 
       # Uploads artifact
       - name: Upload Artifact
