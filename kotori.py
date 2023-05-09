@@ -167,7 +167,7 @@ class KotoriLang:
 
 
 APP = "kotori"
-LOCALE_DIR = str(Path(os.getcwd(), "..", "..", "share", "locale"))
+LOCALE_DIR = str(Path(os.getcwd(), "mo"))
 try:
     locale.bindtextdomain(APP, LOCALE_DIR)
 except Exception:
@@ -625,9 +625,9 @@ if __name__ == "__main__":
                 force_update_epg()
 
         if KotoriData.use_dark_icon_theme:
-            ICONS_FOLDER = str(Path("..", "..", "..", "share", "kotori", "icons_dark"))
+            ICONS_FOLDER = str(Path("..", "icons_dark"))
         else:
-            ICONS_FOLDER = str(Path("..", "..", "..", "share", "kotori", "icons"))
+            ICONS_FOLDER = str(Path("..", "icons"))
 
         main_icon = QtGui.QIcon(
             str(Path(os.path.dirname(__file__), "kotori", ICONS_FOLDER, "tv-blue.png"))
@@ -3446,16 +3446,14 @@ if __name__ == "__main__":
                 license_win.hide()
 
         with open(
-            str(
-                Path("..", "..", "share", "kotori", "licenses", "GPL-3.0-or-later.txt")
-            ),
+            str(Path("licenses", "GPL-3.0-or-later.txt")),
             "r",
             encoding="utf8",
         ) as license_gpl_file:
             license_gpl_str = license_gpl_file.read()
 
         with open(
-            str(Path("..", "..", "share", "kotori", "licenses", "CC-BY-4.0.txt")),
+            str(Path("licenses", "CC-BY-4.0.txt")),
             "r",
             encoding="utf8",
         ) as license_ccby_file:

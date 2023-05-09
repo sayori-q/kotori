@@ -21,14 +21,8 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
-import os
-import sys
 import datetime
-from pathlib import Path
-
-sys.path.append(str(Path(os.getcwd(), "usr", "lib", "kotori")))
-
-from kotori.catchup import (get_catchup_url, parse_specifiers_now_url,  # noqa: E402
+from kotori.catchup import (get_catchup_url, parse_specifiers_now_url,
                             format_placeholders)
 
 

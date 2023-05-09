@@ -1,4 +1,4 @@
 [flake8]
-exclude = .git,__pycache__,usr/lib/kotori/thirdparty
+exclude = .git,__pycache__,thirdparty
 max_line_length = 88
 extend-ignore = E203

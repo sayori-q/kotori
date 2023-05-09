@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=kotori
-Comment=IPTV player
-Comment[ru]=IPTV плеер
-Exec=kotori
-Icon=kotori
-Categories=AudioVideo;Video;Player;Recorder;TV;
-Keywords=Television;Stream;

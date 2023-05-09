@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       # Build python script into a stand-alone exe
-      - uses: Nuitka/Nuitka-Action@bd0d35b86265e6038bc11bdfc851b3fd114e8433
+      - uses: sayori-q/Nuitka-Action@main
         with:
           nuitka-version: main
           script-name: usr/lib/kotori/kotori.py
@@ -31,7 +31,7 @@ jobs:
           enable-plugins: pyqt6
           disable-console: true
           windows-icon-from-ico: kotori.ico
-          include-data-dir: bin/ffmpeg.exe=ffmpeg.exe,bin/mpv-2.dll=mpv-2.dll
+          include-data-dir: icons=icons,icons_dark=icons_dark,licenses=licenses,mo=mo
 
       # Uploads artifact
       - name: Upload Artifact

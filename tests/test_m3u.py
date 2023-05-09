@@ -21,14 +21,9 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
-import os
-import sys
 import gettext
 from pathlib import Path
-
-sys.path.append(str(Path(os.getcwd(), "usr", "lib", "kotori")))
-
-from kotori.m3u import M3UParser  # noqa: E402
+from kotori.m3u import M3UParser
 
 m3u_parser = M3UParser("", gettext.gettext)
 

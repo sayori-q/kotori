@@ -1,11 +1,4 @@
 __pycache__
-usr/share/locale
 *.swo
 *.swp
 .pytest_cache
-debian/.debhelper
-debian/debhelper-build-stamp
-debian/files
-debian/kotori.debhelper.log
-debian/kotori.substvars
-debian/kotori

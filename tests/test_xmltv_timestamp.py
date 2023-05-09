@@ -20,13 +20,7 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
-import os
-import sys
-from pathlib import Path
-
-sys.path.append(str(Path(os.getcwd(), "usr", "lib", "kotori")))
-
-from kotori.epg_xmltv import parse_timestamp  # noqa: E402
+from kotori.epg_xmltv import parse_timestamp
 
 
 def test_xmltv_timestamp():
