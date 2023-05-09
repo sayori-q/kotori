@@ -1,0 +1,6 @@
+requests
+chardet
+setproctitle
+PyQt6
+Pillow
+unidecode
