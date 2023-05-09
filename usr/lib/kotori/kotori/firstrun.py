@@ -28,6 +28,8 @@ from kotori.crossplatform import LOCAL_DIR
 
 def firstrun():
     if not os.path.isfile(Path(LOCAL_DIR, "playlists.json")):
+        if not os.path.isdir(LOCAL_DIR):
+            os.mkdir(LOCAL_DIR)
         with open(
             Path(LOCAL_DIR, "playlists.json"), "w", encoding="utf8"
         ) as playlists_file:
