@@ -130,8 +130,7 @@ try:
     from thirdparty.mpris_server.events import EventAdapter
     from thirdparty.mpris_server.server import Server
 except Exception:
-    logger.warning("Failed to init MPRIS libraries!")
-    logger.warning(traceback.format_exc())
+    pass
 
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 
@@ -7013,14 +7012,13 @@ if __name__ == "__main__":
                         mpris.publish()
                         mpris_loop.run()
                     except Exception:
-                        logger.warning("Failed to start MPRIS loop!")
+                        pass
 
             mpris_loop = GLib.MainLoop()
             mpris_thread = threading.Thread(target=mpris_loop_start)
             mpris_thread.start()
         except Exception as mpris_e:
-            logger.warning(mpris_e)
-            logger.warning("Failed to set up MPRIS!")
+            pass
 
         def update_scheduler_programme():
             channel_list_2 = [chan_name for chan_name in doSort(array)]
