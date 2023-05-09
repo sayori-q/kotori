@@ -27,7 +27,7 @@ jobs:
         with:
           nuitka-version: main
           script-name: usr/lib/kotori/kotori.py
-          onefile: true
+          standalone: true
           enable-plugins: pyqt6
 
       # Uploads artifact
