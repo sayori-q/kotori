@@ -166,6 +166,7 @@ class KotoriLang:
     cache = {}
 
 
+os.environ["LC_ALL"] = "ru_RU.UTF-8"
 APP = "kotori"
 LOCALE_DIR = str(Path(os.getcwd(), "mo"))
 try:
@@ -6415,7 +6416,7 @@ if __name__ == "__main__":
             "cursor-autohide": 1000,
             "force-window": True,
         }
-        if platform.system() == "Darwin":
+        if platform.system() != "Linux":
             options.pop("vo")
             options.pop("force-window")
         options_orig = options.copy()
@@ -6754,7 +6755,7 @@ if __name__ == "__main__":
                 xdg_open = subprocess.Popen(["xdg-open", str(absolute_path)])
                 xdg_open.wait()
             else:
-                webbrowser.open(str(absolute_path))
+                webbrowser.open("file:///" + str(absolute_path))
 
         def go_channel(i1):
             row = win.listWidget.currentRow()

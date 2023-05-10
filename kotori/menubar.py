@@ -348,7 +348,7 @@ def init_menubar(data):
     KotoriData.alwaysontopAction.triggered.connect(alwaysontop_action)
     KotoriData.alwaysontopAction.setCheckable(True)
     KotoriData.alwaysontopAction.setShortcut(kbd("alwaysontop"))
-    if qt_library == "PyQt6":
+    if qt_library == "PyQt6" or os.name == "nt":
         KotoriData.alwaysontopAction.setVisible(False)
 
     KotoriData.streaminformationAction = qaction(_("Stream Information"), data)
