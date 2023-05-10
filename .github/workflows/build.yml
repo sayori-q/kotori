@@ -33,11 +33,11 @@ jobs:
           windows-icon-from-ico: kotori.ico
           include-data-dir: bin=bin,icons=icons,icons_dark=icons_dark,licenses=licenses,mo=mo
 
-      # Inno Setup Installer
-      - name: Inno Setup Installer
-        shell: bash
+      # Building the installer
+      - name: Building the installer
         run: |
           iscc "installer.iss"
+        shell: bash
 
       # Uploads artifact
       - name: Upload Artifact
