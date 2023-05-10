@@ -23,17 +23,17 @@
 #
 import os
 import logging
-import gettext
 import json
 import traceback
 from functools import partial
+from kotori.lang import lang1
 from kotori.qt import get_qt_library
 from kotori.qt6compat import qaction
 from kotori.options import read_option
 
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 logger = logging.getLogger(__name__)
-_ = gettext.gettext
+_ = lang1.gettext
 
 
 class KotoriData:
@@ -213,12 +213,12 @@ def init_menubar(data):
         kbd("(lambda: mpv_seek(600))"),
     ]
     sec_i18n = [
-        gettext.ngettext("-%d second", "-%d seconds", 10) % 10,
-        gettext.ngettext("+%d second", "+%d seconds", 10) % 10,
-        gettext.ngettext("-%d minute", "-%d minutes", 1) % 1,
-        gettext.ngettext("+%d minute", "+%d minutes", 1) % 1,
-        gettext.ngettext("-%d minute", "-%d minutes", 10) % 10,
-        gettext.ngettext("+%d minute", "+%d minutes", 10) % 10,
+        lang1.ngettext("-%d second", "-%d seconds", 10) % 10,
+        lang1.ngettext("+%d second", "+%d seconds", 10) % 10,
+        lang1.ngettext("-%d minute", "-%d minutes", 1) % 1,
+        lang1.ngettext("+%d minute", "+%d minutes", 1) % 1,
+        lang1.ngettext("-%d minute", "-%d minutes", 10) % 10,
+        lang1.ngettext("+%d minute", "+%d minutes", 10) % 10,
     ]
     sec_i = -1
     for i in ((10, "seconds", 10), (1, "minutes", 60), (10, "minutes", 600)):

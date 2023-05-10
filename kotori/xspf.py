@@ -22,11 +22,11 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import logging
-import gettext
 import xml.etree.ElementTree as ET
+from kotori.lang import lang1
 
 logger = logging.getLogger(__name__)
-_ = gettext.gettext
+_ = lang1.gettext
 all_channels = _("All channels")
 
 
