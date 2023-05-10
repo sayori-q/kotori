@@ -1,6 +1,6 @@
 requests
 chardet
 setproctitle
-PyQt6
+PyQt5
 Pillow
 unidecode

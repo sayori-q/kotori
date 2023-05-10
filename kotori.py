@@ -355,7 +355,11 @@ if __name__ == "__main__":
 
         m3u = ""
 
-        os.environ["PATH"] = os.path.dirname(__file__) + os.pathsep + os.environ["PATH"]
+        os.environ["PATH"] = (
+            str(Path(os.path.dirname(__file__), "bin"))
+            + os.pathsep
+            + os.environ["PATH"]
+        )
         from thirdparty import mpv
 
         if not os.path.isdir(LOCAL_DIR):
@@ -2467,7 +2471,7 @@ if __name__ == "__main__":
             else:
                 player.http_header_fields = ""
 
-            if not arg_override_play.endswith("/main.png"):
+            if not arg_override_play.endswith("\\main.png"):
                 logger.info(f"Using User-Agent: {player.user_agent}")
                 cur_ref = ""
                 try:
@@ -2869,7 +2873,7 @@ if __name__ == "__main__":
             settings_file1.close()
             settings_win.hide()
             myExitHandler_before()
-            subprocess.Popen([sys.executable] + sys.argv)
+            subprocess.Popen([sys.executable])
             sys.exit(0)
 
         wid2 = QtWidgets.QWidget()

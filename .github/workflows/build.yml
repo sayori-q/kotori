@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-          architecture: 'x64'
+          architecture: 'x86'
           cache: 'pip'
       - run: |
           python -m pip install --upgrade pip
@@ -28,9 +28,9 @@ jobs:
           nuitka-version: main
           script-name: kotori.py
           onefile: true
-          enable-plugins: pyqt6
+          enable-plugins: pyqt5
           windows-icon-from-ico: kotori.ico
-          include-data-dir: icons=icons,icons_dark=icons_dark,licenses=licenses,mo=mo
+          include-data-dir: bin=bin,icons=icons,icons_dark=icons_dark,licenses=licenses,mo=mo
 
       # Uploads artifact
       - name: Upload Artifact
