@@ -29,7 +29,6 @@ jobs:
           script-name: kotori.py
           onefile: true
           enable-plugins: pyqt5
-          disable-console: true
           windows-icon-from-ico: kotori.ico
           include-data-dir: bin=bin,icons=icons,icons_dark=icons_dark,licenses=licenses,mo=mo
 
