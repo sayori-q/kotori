@@ -58,6 +58,7 @@ def fetch_remote_channel_icon(chan_name, logo_url, req_data_ua, req_data_ref):
                     headers=req_data_headers,
                     timeout=(3, 3),
                     stream=True,
+                    verify=False,
                 ).content
                 if req_data1:
                     with io.BytesIO(req_data1) as im_logo_bytes:
