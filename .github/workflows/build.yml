@@ -30,7 +30,7 @@ jobs:
         with:
           nuitka-version: main
           script-name: kotori.py
-          onefile: true
+          standalone: true
           enable-plugins: pyqt5
           disable-console: true
           windows-icon-from-ico: kotori.ico
