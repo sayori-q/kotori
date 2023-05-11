@@ -30,6 +30,7 @@ from kotori.xspf import parse_xspf
 from kotori.qt6compat import qaction
 from kotori.qt import get_qt_library
 
+os.environ["LANG"] = "ru_RU"
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 _ = gettext.gettext
 

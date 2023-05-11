@@ -44,3 +44,21 @@ jobs:
         with:
           name: exe
           path: Output/kotorisetup.exe
+
+      # Release
+      - name: Create release
+        uses: sayori-q/release-action@main
+        with:
+          removeArtifacts: true
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          artifacts: "Output/kotorisetup.exe"
+          body: ${{ github.event.head_commit.message }}
+          name: Release
+          tag: release
+
+      - name: Update release tag
+        run: |
+          git tag -f release
+          git push -f origin release
+        shell: bash

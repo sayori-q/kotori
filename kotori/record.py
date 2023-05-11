@@ -21,12 +21,14 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
+import os
 import logging
 import gettext
 from kotori.qt import get_qt_library
 
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 
+os.environ["LANG"] = "ru_RU"
 logger = logging.getLogger(__name__)
 _ = gettext.gettext
 

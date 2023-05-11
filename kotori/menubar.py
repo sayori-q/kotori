@@ -31,6 +31,7 @@ from kotori.qt import get_qt_library
 from kotori.qt6compat import qaction
 from kotori.options import read_option
 
+os.environ["LANG"] = "ru_RU"
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 logger = logging.getLogger(__name__)
 _ = gettext.gettext

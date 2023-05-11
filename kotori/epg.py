@@ -36,6 +36,7 @@ from kotori.epg_xmltv import parse_as_xmltv
 from kotori.epg_zip import parse_epg_zip
 from kotori.epg_txt import parse_txt
 
+os.environ["LANG"] = "ru_RU"
 _ = gettext.gettext
 logger = logging.getLogger(__name__)
 

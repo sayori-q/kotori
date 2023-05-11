@@ -21,10 +21,12 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
+import os
 import logging
 import gettext
 import xml.etree.ElementTree as ET
 
+os.environ["LANG"] = "ru_RU"
 logger = logging.getLogger(__name__)
 _ = gettext.gettext
 all_channels = _("All channels")

@@ -21,6 +21,7 @@
 # https://fontawesome.com/
 # https://creativecommons.org/licenses/by/4.0/
 #
+import os
 import logging
 import gettext
 import gzip
@@ -28,6 +29,7 @@ import lzma
 import datetime
 import xml.etree.ElementTree as ET
 
+os.environ["LANG"] = "ru_RU"
 _ = gettext.gettext
 logger = logging.getLogger(__name__)
 
