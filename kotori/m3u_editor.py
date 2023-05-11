@@ -22,16 +22,16 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import os
+import gettext
 from pathlib import Path
 from unidecode import unidecode
-from kotori.lang import lang1
 from kotori.m3u import M3UParser
 from kotori.xspf import parse_xspf
 from kotori.qt6compat import qaction
 from kotori.qt import get_qt_library
 
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
-_ = lang1.gettext
+_ = gettext.gettext
 
 HOME_FOLDER = ""
 try:

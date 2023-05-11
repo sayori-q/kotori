@@ -22,13 +22,13 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import logging
+import gettext
 import gzip
 import lzma
 import datetime
 import xml.etree.ElementTree as ET
-from kotori.lang import lang1
 
-_ = lang1.gettext
+_ = gettext.gettext
 logger = logging.getLogger(__name__)
 
 

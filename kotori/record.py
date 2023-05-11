@@ -22,13 +22,13 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import logging
-from kotori.lang import lang1
+import gettext
 from kotori.qt import get_qt_library
 
 qt_library, QtWidgets, QtCore, QtGui, QShortcut = get_qt_library()
 
 logger = logging.getLogger(__name__)
-_ = lang1.gettext
+_ = gettext.gettext
 
 
 class KotoriData:
