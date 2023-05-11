@@ -19,7 +19,7 @@ msgstr ""
 #: usr/lib/kotori/kotori.py:254 usr/lib/kotori/kotori.py:801
 #: usr/lib/kotori/kotori.py:817
 msgid "kotori error"
-msgstr "Ошибка kotori"
+msgstr "Ошибка Kotori"
 
 #: usr/lib/kotori/kotori.py:256 usr/lib/kotori/kotori.py:810
 #: usr/lib/kotori/kotori.py:822
@@ -128,7 +128,7 @@ msgstr "ОК"
 #: usr/lib/kotori/kotori.py:1283
 #: usr/lib/kotori/kotori/menubar.py:371
 msgid "&About kotori"
-msgstr "О&б kotori"
+msgstr "О&б Kotori"
 
 #: usr/lib/kotori/kotori.py:1288 usr/lib/kotori/kotori.py:3534
 msgid "License"
