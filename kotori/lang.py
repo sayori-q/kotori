@@ -22,11 +22,16 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import os
+import os.path
 import gettext
 from pathlib import Path
 
 APP = "kotori"
 LOCALE_DIR = str(Path(os.getcwd(), "mo"))
+
+print(LOCALE_DIR)
+print(os.path.isdir(LOCALE_DIR))
+print(os.listdir(LOCALE_DIR))
 
 lang1 = gettext.translation(APP, LOCALE_DIR, languages=["ru"])
 lang1.install()
