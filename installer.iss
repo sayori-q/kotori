@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Kotori"
-#define MyAppVersion "Release"
+#define MyAppVersion "0.0.1"
 #define MyAppPublisher "sayori-q"
 #define MyAppURL "https://github.com/sayori-q/kotori"
 #define MyAppExeName "kotori.exe"
@@ -37,7 +37,7 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-Source: "build\*"; DestDir: "{app}"; Flags: ignoreversion
+Source: "build\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
