@@ -166,9 +166,10 @@ class KotoriLang:
     cache = {}
 
 
-os.environ["LC_ALL"] = "ru_RU.UTF-8"
+os.environ["LANG"] = "ru_RU"
 APP = "kotori"
-LOCALE_DIR = str(Path(os.getcwd(), "mo"))
+APP_DIR = os.path.abspath(os.path.dirname(__file__))
+LOCALE_DIR = os.path.abspath(os.path.join(APP_DIR, "mo"))
 try:
     locale.bindtextdomain(APP, LOCALE_DIR)
 except Exception:
