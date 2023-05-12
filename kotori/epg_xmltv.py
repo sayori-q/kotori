@@ -23,14 +23,14 @@
 #
 import os
 import logging
-import gettext
 import gzip
 import lzma
 import datetime
 import xml.etree.ElementTree as ET
+from kotori.lang import lang1
 
 os.environ["LANG"] = "ru_RU"
-_ = gettext.gettext
+_ = lang1.gettext
 logger = logging.getLogger(__name__)
 
 

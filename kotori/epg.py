@@ -22,7 +22,6 @@
 # https://creativecommons.org/licenses/by/4.0/
 #
 import os
-import gettext
 import logging
 import json
 import codecs
@@ -31,13 +30,14 @@ import requests
 import io
 import zipfile
 from pathlib import Path
+from kotori.lang import lang1
 from kotori.crossplatform import LOCAL_DIR
 from kotori.epg_xmltv import parse_as_xmltv
 from kotori.epg_zip import parse_epg_zip
 from kotori.epg_txt import parse_txt
 
 os.environ["LANG"] = "ru_RU"
-_ = gettext.gettext
+_ = lang1.gettext
 logger = logging.getLogger(__name__)
 
 EPG_CACHE_VERSION = 1

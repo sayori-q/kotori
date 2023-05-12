@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Kotori"
-#define MyAppVersion "0.0.1"
+#define MyAppVersion "Release"
 #define MyAppPublisher "sayori-q"
 #define MyAppURL "https://github.com/sayori-q/kotori"
 #define MyAppExeName "kotori.exe"

@@ -23,12 +23,12 @@
 #
 import os
 import logging
-import gettext
 import xml.etree.ElementTree as ET
+from kotori.lang import lang1
 
 os.environ["LANG"] = "ru_RU"
 logger = logging.getLogger(__name__)
-_ = gettext.gettext
+_ = lang1.gettext
 all_channels = _("All channels")
 
 

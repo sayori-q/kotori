@@ -72,6 +72,7 @@ from kotori.menubar import (
     get_seq,
     reload_menubar_shortcuts,
 )
+from kotori.lang import lang1
 from kotori.firstrun import firstrun
 from kotori.xtreamtom3u import convert_xtream_to_m3u
 from kotori.m3u import M3UParser
@@ -180,7 +181,7 @@ gettext.textdomain(APP)
 
 def cached_gettext(gettext_str):
     if gettext_str not in KotoriLang.cache:
-        KotoriLang.cache[gettext_str] = gettext.gettext(gettext_str)
+        KotoriLang.cache[gettext_str] = lang1.gettext(gettext_str)
     return KotoriLang.cache[gettext_str]
 
 
@@ -1502,7 +1503,7 @@ if __name__ == "__main__":
         soffset_1.setDecimals(1)
         offset_label_1 = QtWidgets.QLabel("{}:".format(_("TV guide offset")))
         offset_label_hours = QtWidgets.QLabel(
-            (gettext.ngettext("%d hour", "%d hours", 0) % 0).replace("0 ", "")
+            (lang1.ngettext("%d hour", "%d hours", 0) % 0).replace("0 ", "")
         )
 
         playlists_win_edit_widget = QtWidgets.QWidget()
@@ -2933,7 +2934,7 @@ if __name__ == "__main__":
         sfld = QtWidgets.QLineEdit()
         sfld.setText(settings["save_folder"])
         scache = QtWidgets.QLabel(
-            (gettext.ngettext("%d second", "%d seconds", 0) % 0).replace("0 ", "")
+            (lang1.ngettext("%d second", "%d seconds", 0) % 0).replace("0 ", "")
         )
         sselect = QtWidgets.QLabel("{}:".format(_("Or select provider")))
         sselect.setStyleSheet("color: #00008B;")
@@ -3000,7 +3001,7 @@ if __name__ == "__main__":
         scache1.setValue(settings["cache_secs"])
 
         epgdays_p = QtWidgets.QLabel(
-            (gettext.ngettext("%d day", "%d days", 0) % 0).replace("0 ", "")
+            (lang1.ngettext("%d day", "%d days", 0) % 0).replace("0 ", "")
         )
 
         epgdays_label = QtWidgets.QLabel("{}:".format(_("Load EPG for")))
@@ -4865,7 +4866,7 @@ if __name__ == "__main__":
 
         def get_of_txt(of_num):
             # try:
-            #     of_txt = gettext.ngettext("of %d", "", of_num) % of_num
+            #     of_txt = lang1.ngettext("of %d", "", of_num) % of_num
             # except Exception:
             #     of_txt = f"of {of_num}"
             # return of_txt
@@ -6071,7 +6072,7 @@ if __name__ == "__main__":
               subcontrol-position: center left;
               left: 1px;
               image: url("""
-            + str(Path("kotori", ICONS_FOLDER, "leftarrow.png"))
+            + os.path.abspath(str(Path("kotori", ICONS_FOLDER, "leftarrow.png")))
             + """);
               height: 24px;
               width: 24px;
@@ -6082,7 +6083,7 @@ if __name__ == "__main__":
               subcontrol-position: center right;
               right: 1px;
               image: url("""
-            + str(Path("kotori", ICONS_FOLDER, "rightarrow.png"))
+            + os.path.abspath(str(Path("kotori", ICONS_FOLDER, "rightarrow.png")))
             + """);
               height: 24px;
               width: 24px;
@@ -8135,12 +8136,12 @@ if __name__ == "__main__":
         }
 
         mki2 = []
-        mki2.append(gettext.ngettext("-%d second", "-%d seconds", 10) % 10)
-        mki2.append(gettext.ngettext("+%d second", "+%d seconds", 10) % 10)
-        mki2.append(gettext.ngettext("-%d minute", "-%d minutes", 1) % 1)
-        mki2.append(gettext.ngettext("+%d minute", "+%d minutes", 1) % 1)
-        mki2.append(gettext.ngettext("-%d minute", "-%d minutes", 10) % 10)
-        mki2.append(gettext.ngettext("+%d minute", "+%d minutes", 10) % 10)
+        mki2.append(lang1.ngettext("-%d second", "-%d seconds", 10) % 10)
+        mki2.append(lang1.ngettext("+%d second", "+%d seconds", 10) % 10)
+        mki2.append(lang1.ngettext("-%d minute", "-%d minutes", 1) % 1)
+        mki2.append(lang1.ngettext("+%d minute", "+%d minutes", 1) % 1)
+        mki2.append(lang1.ngettext("-%d minute", "-%d minutes", 10) % 10)
+        mki2.append(lang1.ngettext("+%d minute", "+%d minutes", 10) % 10)
 
         main_keybinds_translations = {
             "(lambda: mpv_seek(-10))": mki2[0],
