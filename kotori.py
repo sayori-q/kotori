@@ -4999,14 +4999,15 @@ if __name__ == "__main__":
         favourites_lang = _("Favourites")
 
         def gen_chans():
-            global playing_chan, current_group, array, page_box, channelfilter
+            global playing_chan, current_group, array, page_box
+            global page_box_min, page_box_max, channelfilter
             global prog_match_arr, channel_logos_request_old
             global channel_logos_process, multiprocessing_manager_dict
 
             channel_logos_request = {}
 
             try:
-                idx = (page_box.value() - 1) * 100
+                idx = (int(page_box.text()) - 1) * 100
             except Exception:
                 idx = 0
             try:
@@ -5037,10 +5038,10 @@ if __name__ == "__main__":
             ch_array = dict([(x14["title"], x14) for x14 in ch_array])
             try:
                 if filter_txt:
-                    page_box.setMaximum(round(len(ch_array) / 100) + 1)
+                    page_box_max = round(len(ch_array) / 100) + 1
                     of_lbl.setText(get_of_txt(round(len(ch_array) / 100) + 1))
                 else:
-                    page_box.setMaximum(round(len(array_filtered) / 100) + 1)
+                    page_box_max = round(len(array_filtered) / 100) + 1
                     of_lbl.setText(get_of_txt(round(len(array_filtered) / 100) + 1))
             except Exception:
                 pass
@@ -6061,45 +6062,50 @@ if __name__ == "__main__":
         )
         page_lbl = QtWidgets.QLabel("{}:".format(_("Page")))
         of_lbl = QtWidgets.QLabel()
-        page_box = QtWidgets.QSpinBox()
-        page_box.setSuffix("        ")
-        page_box.setMinimum(1)
-        page_box.setMaximum(round(len(array) / 100) + 1)
-        page_box.setStyleSheet(
-            """
-            QSpinBox::down-button  {
-              subcontrol-origin: margin;
-              subcontrol-position: center left;
-              left: 1px;
-              image: url("""
-            + os.path.abspath(str(Path("kotori", ICONS_FOLDER, "leftarrow.png")))
-            + """);
-              height: 24px;
-              width: 24px;
-            }
-
-            QSpinBox::up-button  {
-              subcontrol-origin: margin;
-              subcontrol-position: center right;
-              right: 1px;
-              image: url("""
-            + os.path.abspath(str(Path("kotori", ICONS_FOLDER, "rightarrow.png")))
-            + """);
-              height: 24px;
-              width: 24px;
-            }
-        """
-        )
-        page_box.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        page_box = QtWidgets.QLabel()
+        page_box.setText(str(1))
+        bold_fnt_3 = QtGui.QFont()
+        bold_fnt_3.setBold(True)
+        page_box.setFont(bold_fnt_3)
         of_lbl.setText(get_of_txt(round(len(array) / 100) + 1))
+
+        page_box_min = 1
+        page_box_max = round(len(array) / 100) + 1
+
+        left_btn = QtWidgets.QPushButton()
+        left_btn.setIcon(
+            QtGui.QIcon(str(Path("kotori", ICONS_FOLDER, "leftarrow.png")))
+        )
+        right_btn = QtWidgets.QPushButton()
+        right_btn.setIcon(
+            QtGui.QIcon(str(Path("kotori", ICONS_FOLDER, "rightarrow.png")))
+        )
+
+        def left_btn_clicked():
+            new_val = int(page_box.text()) - 1
+            if new_val < page_box_min:
+                new_val = page_box_min
+            page_box.setText(str(new_val))
+            page_change()
+
+        def right_btn_clicked():
+            new_val = int(page_box.text()) + 1
+            if new_val > page_box_max:
+                new_val = page_box_max
+            page_box.setText(str(new_val))
+            page_change()
+
+        left_btn.clicked.connect(left_btn_clicked)
+        right_btn.clicked.connect(right_btn_clicked)
 
         def page_change():
             win.listWidget.verticalScrollBar().setValue(0)
             redraw_chans()
 
-        page_box.valueChanged.connect(page_change)
         layout4.addWidget(page_lbl)
+        layout4.addWidget(left_btn)
         layout4.addWidget(page_box)
+        layout4.addWidget(right_btn)
         layout4.addWidget(of_lbl)
         widget4.setLayout(layout4)
         layout = QtWidgets.QGridLayout()
